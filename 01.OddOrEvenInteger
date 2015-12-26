@@ -1,0 +1,13 @@
+using System;
+
+class OddEvenInteger
+{
+    static void Main()
+    {
+        Console.Write("n = ");
+        int n = int.Parse(Console.ReadLine());
+        bool result = (n % 2 == 1) || (n % 2 == -1) ? true : false;
+        Console.WriteLine(result);
+    }
+}
+
