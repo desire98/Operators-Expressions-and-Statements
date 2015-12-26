@@ -1,0 +1,21 @@
+using System;
+
+class FourDigit
+{
+    static void Main()
+    {
+        Console.WriteLine("n = ");
+        int n = int.Parse(Console.ReadLine());
+        int d = n % 10;
+        int c = (n / 10) % 10;
+        int b = (n / 100) % 10;
+        int a = (n / 1000) % 10;
+        Console.WriteLine(a + b + c + d);
+        Console.WriteLine("{0}{1}{2}{3}", d, c, b, a);
+        Console.WriteLine("{0}{1}{2}{3}", d, a, b, c);
+        Console.WriteLine("{0}{1}{2}{3}", a, c, b, d);
+
+
+    }
+}
+
