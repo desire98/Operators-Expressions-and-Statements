@@ -1,0 +1,17 @@
+using System;
+
+class Trapezoid
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("a = ");
+        double a = double.Parse(Console.ReadLine());
+        Console.WriteLine("b = ");
+        double b = double.Parse(Console.ReadLine());
+        Console.WriteLine("h = ");
+        double h = double.Parse(Console.ReadLine());
+        double area = ((a + b) * h) / 2;
+        Console.WriteLine(area);
+    }
+}
+
