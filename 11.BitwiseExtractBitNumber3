@@ -1,0 +1,14 @@
+using System;
+
+class Bitwise
+{
+    static void Main()
+    {
+        Console.WriteLine("n = ");
+        uint n = uint.Parse(Console.ReadLine());
+        uint mask = 1;
+        string zeroOrOne = (mask << 3 & n) == 0 ? "0" : "1";
+        Console.WriteLine(zeroOrOne);
+    }
+}
+
