@@ -1,0 +1,23 @@
+using System;
+
+class PointInsideAndOutside
+{
+    static void Main()
+    {
+        Console.WriteLine("x = ");
+        double x = double.Parse(Console.ReadLine());
+        Console.WriteLine("y = ");
+        double y = double.Parse(Console.ReadLine());
+        bool insideCircle = (Math.Pow(x - 1, 2) + Math.Pow(y - 1, 2) <= 1.5 * 1.5);
+        bool insideRectangle = (x <= 5 && x <= 1) && (y <= 1 && y <= -1);
+        if (insideCircle && !insideRectangle)
+        {
+            Console.WriteLine("Yes");
+        }
+        else
+        {
+            Console.WriteLine("No");
+        }
+    }
+}
+
