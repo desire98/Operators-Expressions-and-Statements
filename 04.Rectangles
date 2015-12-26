@@ -1,0 +1,13 @@
+using System;
+
+class Divide
+{
+    static void Main()
+    {
+        Console.Write("n = ");
+        int n = int.Parse(Console.ReadLine());
+        bool divided = (n % 7 == 0) && (n % 5 == 0) ? true : false;
+        Console.WriteLine(divided);
+    }
+}
+
